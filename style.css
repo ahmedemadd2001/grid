@@ -10,28 +10,57 @@
 */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.parent {
-    width: 400px;
-    height: 400px;
-    background-color: #eee;
-    margin: 20px auto;
-    padding: 20px;
+.page {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 10px 10px;
-    justify-content: space-between;
-    align-content: space-between;
+    background: #eee;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "logo logo logo nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont side side side"
+        "fot fot fot fot fot fot fot fot fot fot";
+}
+
+h2 {
+    background-color: red;
+    text-align: center;
+    /* padding: 10px; */
+    color: white;
+    grid-area: logo;
 
 }
 
-.parent div {
-    background-color: red;
+ul {
     color: white;
-    padding: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+    /* list-style: none; */
+}
+
+ul li {
+    display: inline-block;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+}
+
+section {
+    grid-area: cont;
+    background-color: green;
+}
+
+aside {
+    grid-area: side;
+    background-color: mediumslateblue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    grid-area: fot;
 }
