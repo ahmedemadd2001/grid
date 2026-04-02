@@ -13,16 +13,17 @@
 */
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .parent {
-    width: 800px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
     margin: 20px auto;
-    gap: 10px;
+    /* width: 800px; */
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* gap: 10px; */
 }
 
 .parent div {
