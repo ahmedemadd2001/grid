@@ -267,7 +267,6 @@ h1 {
 .services .services-content .srv i {
   flex-basis: 60px;
   color: var(--main-color);
-  margin-top: 20px;
 }
 .services .services-content .srv .text {
   flex: 1;
@@ -276,7 +275,7 @@ h1 {
   margin: 0 0 20px;
 }
 .services .services-content .srv .text p {
-  color: #777;
+  color: #444;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -309,6 +308,6 @@ h1 {
 /*Start Protofilo*/
 .protofilo {
   padding-bottom: 60px;
-  padding-top: 60px;  
+  padding-top: 60px;
 }
 /*End Protofilo*/
